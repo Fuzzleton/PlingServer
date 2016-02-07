@@ -45,6 +45,7 @@ namespace PlingAgent
         public Hashtable httpHeaders = new Hashtable();
 
 
+
         private static int MAX_POST_SIZE = 10 * 1024 * 1024; // 10MB
 
         public HttpProcessor(TcpClient s, HttpServer srv)
@@ -256,8 +257,7 @@ namespace PlingAgent
     public class MyHttpServer : HttpServer
     {
 
-        private Dictionary<String, String> Events = new Dictionary<string, string>();
-
+        public List<Event> lstEvents = new List<Event>();
 
         public MyHttpServer(int port)
             : base(port)
@@ -319,16 +319,18 @@ namespace PlingAgent
             }
             else if (request.StartsWith("host_event"))
             {
-                Events.Add(request.Substring(10, 17), request.Substring(27));
+                lstEvents.Add(new Event(request.Substring(10)));
                 answer = "registered";
+                
             }
             else if (request.StartsWith("get_events"))
             {
-                answer = JsonConvert.SerializeObject(Events, Formatting.None);
+                answer = JsonConvert.SerializeObject(lstEvents, Formatting.None);
+
                 Debug.WriteLine(answer);
             }
 
-            JsonConvert.SerializeObject(Events, Formatting.None);
+            
 
             return answer;
         }
