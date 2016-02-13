@@ -311,7 +311,7 @@ namespace PlingAgent
         {
             String request = text.Substring(1);
             String answer = "";
-
+            Thread.Sleep(5000);
             if (request.StartsWith("connect"))
             {
                 answer = "true";

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlingAgent", "PlingAgent\PlingAgent.csproj", "{13A15E48-803D-4B21-B819-5A891F8ECD1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlingAgentCore", "PlingAgentCore\PlingAgentCore.csproj", "{5EBB30BC-15CB-4C38-B963-1B8F09792BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{13A15E48-803D-4B21-B819-5A891F8ECD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13A15E48-803D-4B21-B819-5A891F8ECD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13A15E48-803D-4B21-B819-5A891F8ECD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBB30BC-15CB-4C38-B963-1B8F09792BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBB30BC-15CB-4C38-B963-1B8F09792BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBB30BC-15CB-4C38-B963-1B8F09792BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBB30BC-15CB-4C38-B963-1B8F09792BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
